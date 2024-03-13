@@ -8,16 +8,22 @@ class Pantalla1_0308 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pantalla1 Alcantara"),
-        backgroundColor: Colors.greenAccent,
+        title: Text("Pantalla 1 Alcantara 0308",
+            style: TextStyle(color: Color(0xffffffff))),
+        backgroundColor: Color(0xff00ab39),
       ),
       body: Center(
-        child: Column(
-          children: [
-            Container(
-              child: Text("Alcantara ejemplo"),
-            )
-          ],
+        child: Container(
+          color: Color(0xff8cff90),
+          width: 300,
+          height: 300,
+          padding: EdgeInsets.all(32),
+          margin: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+          alignment: Alignment.center,
+          child: Text(
+            'Card 1 Alcantara0308',
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );

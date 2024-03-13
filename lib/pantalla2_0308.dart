@@ -10,16 +10,21 @@ class Pantalla2_0308 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Pantalla 2 Alcantara0308"),
-        backgroundColor: Colors.deepOrangeAccent,
+        backgroundColor: Color(0xffff7300),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-                onPressed: () {}, // si presiono boton
-                child: Text("Pantalla"))
-          ],
+        child: Container(
+          color: Color(0xffffa86d),
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 200,
+            maxHeight: 300,
+            maxWidth: 300,
+          ),
+          child: Text(
+            'Card 2 Alcantara0308',
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );

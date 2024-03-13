@@ -9,8 +9,8 @@ class PantallaInicial_0308 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pantalla Inicial Alcantara0308'),
-        backgroundColor: Colors.cyanAccent,
+        title: const Text('Pantalla inicial Alcantara0308'),
+        backgroundColor: Color(0xff8e8e8e),
       ),
       body: Center(
         child: Column(
@@ -20,13 +20,23 @@ class PantallaInicial_0308 extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/Pantalla1_0308');
               },
-              child: Text("Mover a pantalla 1"),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+              child: Text("Pantalla 1"),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/Pantalla2_0308');
               },
-              child: Text("Mover a pantalla 2"),
+              style:
+                  ElevatedButton.styleFrom(backgroundColor: Colors.deepOrange),
+              child: Text("Pantalla 2"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/Pantalla3_0308');
+              },
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+              child: Text("Pantalla 3"),
             ),
           ],
         ),
